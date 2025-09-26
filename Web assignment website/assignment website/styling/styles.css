@@ -1,0 +1,908 @@
+/* ===========================
+   Font Imports
+   =========================== */
+@font-face {
+    font-family: 'Galory';
+    src: url(../fonts/galory-demo/GALORY\ Demo.ttf);
+}
+
+@font-face {
+    font-family: 'HappyKid';
+    src: url(../fonts/happy-kid/HAPPYKid\ free.ttf);
+}
+
+/* ===========================
+   Base Styles
+   =========================== */
+/* Set default margin and padding for the whole page */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ===========================
+   Navbar Styles
+   =========================== */
+/* Main navigation bar container */
+.navbar {
+    width: 100%;
+    background-color: rgb(145, 184, 211);
+    box-shadow: 0 1px 4px gray;
+    display: inline-block;
+}
+
+/* Logo image in navbar */
+.logo {
+    width: 100px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 13px;
+    border-radius: 50%;
+    border: solid 2px rgb(128, 128, 128, 0.2); 
+}
+
+/* NGO name text styling */
+.ngo-name {
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+    margin-left: 30px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 40px;
+    text-shadow: 0.5px 0.5px 1px gray;
+}
+
+/* Navigation links container */
+.nav-links {
+    float: right;
+    margin-right: 90px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+/* Navigation link styles */
+a {
+    text-decoration: none;
+    margin-right: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: arial;
+    color: white;
+    padding: 10px 15px;
+    border-left: solid 2px rgb(128, 128, 128, 0.2);
+}
+
+/* Navigation link hover effect */
+a:hover {
+    color: rgb(145, 184, 211);
+    border-left: solid 2px rgb(145, 184, 211, 0.5);
+    background-color: white;
+    box-shadow: 2px 2px 5px gray;
+    transition: 1s;
+    cursor: pointer;
+}
+
+/* ===========================
+   Home Page Styles
+   =========================== */
+/* Home page main container */
+.home-page-container {
+    position: relative;
+}
+
+/* Home page banner image */
+.home-page-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Home page text overlay box */
+.home-page-container-text {
+    font-family: arial;
+    font-size: 20px;
+    color: white;
+    line-height: 30px;
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    background-color: transparent;
+    width: 700px;
+    height: 550px;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(196, 196, 196, 0.3);
+}
+
+/* "Who are we" heading */
+.text-who-are-we {
+    font-family: HappyKid, arial;
+    font-size: 50px;
+}
+
+/* Mission statement heading */
+.text-mission {
+    font-family: HappyKid, arial;
+    font-size: 50px;
+}
+
+/* ===========================
+   Donation Page Styles
+   =========================== */
+/* Donation page main container */
+.donation-page-container {
+    position: relative;
+    color: white;
+}
+
+/* Donation page banner image */
+.donation-page-container img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Donation page text overlay box */
+.donation-page-container-text {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    background-color: rgb(196, 196, 196, 0.3);
+    padding: 10px 0 10px 30px;
+    line-height: 60px;
+    width: 600px;
+    height: 400px;
+}
+
+/* Main donation heading */
+.donation-page-container-text-1 {
+    font-family: HappyKid, arial;
+    font-size: 50px;
+}
+
+/* Donation subheading */
+.donation-page-container-text-2 {
+    font-family: arial;
+    font-size: 20px;
+    color: white;
+    border-left: solid white 2px;
+    padding: 0 0 0 20px;
+}
+
+/* Donation form container */
+.donation-page-container-form {
+    position: absolute;
+    top: 100px;
+    right: 180px;
+    background-color: rgb(196, 196, 196, 0.3);
+    padding: 10px 20px 10px 30px;
+    width: 300px;
+    height: 300px;
+}
+
+/* "DONATE" heading in form */
+.donation-page-container-text-3 {
+    font-family: HappyKid, arial;
+    font-size: 40px;
+}
+
+/* Donation form subheading */
+.donation-page-container-text-4 {
+    font-family: arial;
+    font-size: 20px;
+    color: rgb(255, 255, 255, 0.8);
+}
+
+/* Donation amount input field */
+.donation-page-container-form input[type=text] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+    margin: auto;
+}
+
+/* Donation submit buttons */
+.donation-page-container-form input[type=submit] {
+    margin: 20px 10px 0 0;
+    background-color: rgb(145, 184, 211);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+/* Donation submit button hover effect */
+.donation-page-container-form input[type=submit]:hover {
+    background-color: white;
+    color: rgb(145, 184, 211);
+    font-size: bold;
+    box-shadow: 2px 2px 5px gray;
+    width: 150px;
+    cursor: pointer;  
+}
+
+/* ===========================
+   Volunteering Page Styles
+   =========================== */
+/* Volunteering page main container */
+.volunteering-page-container {
+    position: relative;
+}
+
+/* Volunteering page banner image */
+.volunteering-page-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Volunteering section heading */
+.volunteering-page-container-heading {
+    font-family: HappyKid, arial;
+    font-size: 40px;
+    margin: 50px 0 10px 0;
+}
+
+/* Volunteering page text overlay box */
+.volunteering-page-container-text {
+    font-family: arial;
+    font-size: 20px;
+    color: white;
+    line-height: 30px;
+    position: absolute;
+    top: 90px;
+    left: 40px;
+    background-color: transparent;
+    width: 700px;
+    height: 550px;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(196, 196, 196, 0.3);
+}
+
+/* Volunteering form header */
+.volunteering-header {
+    background-color: rgb(145, 184, 211);
+    text-align: center;
+    width: 50%;
+    margin: 60px auto auto auto;
+    padding: 20px;
+    font-family: HappyKid, arial;
+    font-size: 25px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+
+/* Volunteering form container */
+.form-container-2 {
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+    font-family: arial;
+    background-color: rgb(196, 196, 196, 0.3);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 165px;
+    right: 40px;
+    color: white;
+}
+
+/* Volunteering form submit button */
+.form-container-2 input[type=submit] {
+    margin: 0 0 20px 40px;
+    background-color: rgb(145, 184, 211);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+/* Volunteering form submit button hover effect */
+.form-container-2 input[type=submit]:hover {
+    background-color: white;
+    color: rgb(145, 184, 211);
+    font-size: bold;
+    box-shadow: 2px 2px 5px gray;
+    width: 200px;
+    cursor: pointer;  
+}
+
+/* ===========================
+   Adoption Page Styles
+   =========================== */
+/* Adoption page main heading */
+.new-bf {
+    background-color: rgb(145, 184, 211);
+    text-align: center;
+    width: 50%;
+    margin: 40px auto 50px auto;
+    padding: 20px;
+    font-family: HappyKid, arial;
+    font-size: 70px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+} 
+
+/* Dog profiles grid container */
+.dog-profiles-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    margin: auto auto 1000px auto;
+    height: 950px;
+}
+
+/* Individual dog profile card */
+.dog-profiles {
+    margin: 10px 0 20px 0;
+    padding: 20px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual cat profile card */
+.cat-profiles {
+    margin: 10px 0 20px 0;
+    padding: 20px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Dog profile image */
+.dog-profiles-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Cat profile image */
+.cat-profiles img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Dog name styling */
+.dog-names {
+    font-family: Arial;
+    font-weight: bold;
+    color: black;
+    margin-right: 10px;
+    padding: 0 10px 0 0;
+    border-right: solid rgb(128, 128, 128, 0.3) 1px;
+}
+
+/* Cat name styling */
+.cat-names {
+    font-family: Arial;
+    font-weight: bold;
+    color: black;
+    margin-right: 10px;
+    padding: 0 10px 0 0;
+    border-right: solid rgb(128, 128, 128, 0.3) 1px;
+}
+
+/* Pet age styling */
+.age {
+    font-family: Arial;
+    color: gray;
+}
+
+/* Adoption submit button */
+.dog-profiles-container input[type=submit] {
+    background-color: rgb(145, 184, 211);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+/* Adoption submit button hover effect */
+.dog-profiles-container input[type=submit]:hover {
+    background-color: white;
+    color: rgb(145, 184, 211);
+    font-weight: bolder;
+    box-shadow: 2px 2px 5px gray;
+    width: 200px;
+    cursor: pointer; 
+}
+
+/* ===========================
+   Report Page Styles
+   =========================== */
+/* Report page main container */
+.report-page-container {
+    position: relative;
+}
+
+/* Report page banner image */
+.report-page-container img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+/* Report page text overlay box */
+.report-page-container-text {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 100%;
+}
+
+/* Report form header */
+.report-header {
+    background-color: rgb(145, 184, 211);
+    text-align: center;
+    width: 50%;
+    margin: 60px auto auto auto;
+    padding: 5px 20px 5px 20px;
+    font-family: HappyKid, arial;
+    font-size: 25px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Report form container */
+.form-container-1 {
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+    font-family: arial;
+    background-color: rgb(196, 196, 196, 0.3);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid for report form inputs */
+.inner-form-container-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+/* Report form input fields */
+.inner-form-container-1 input {
+    margin: 0 0 10px 0;
+    border: none;
+    height: 30px;
+    size: 50%;
+    padding: 0 0 0 9px;
+}
+
+/* Checkbox label styling */
+.click-box-text {
+    margin: 0 0 0 45px;
+}
+
+/* Grid for report form checkboxes */
+.inner-form-container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 0 20px 40px;
+    row-gap: 6px;
+}
+
+/* Report form textarea */
+textarea {
+    margin: 0 0 20px 40px;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Report form submit button */
+.form-container-1 input[type=submit] {
+    margin: 0 0 20px 40px;
+    background-color: rgb(145, 184, 211);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+/* Report form submit button hover effect */
+.form-container-1 input[type=submit]:hover {
+    background-color: white;
+    color: rgb(145, 184, 211);
+    font-size: bold;
+    box-shadow: 2px 2px 5px gray;
+    width: 200px;
+    cursor: pointer;  
+}
+
+/* ===========================
+   Contact Page Styles
+   =========================== */
+/* Contact page main container */
+.contact-page-container {
+    position: relative;
+}
+
+/* Contact page banner image */
+.contact-page-container img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+/* Contact page text overlay box */
+.contact-page-container-text {
+    position: absolute;
+    top: 90px;
+    left: 40px;
+    width: 100%;
+}
+
+/* Contact info grid container */
+.contact-us-container {
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 3fr 0.5fr 3fr;
+    row-gap: 20px;
+    font-family: arial;
+    background-color: rgb(196, 196, 196, 0.3);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* "Get in touch" heading */
+.get-in-touch {
+    background-color: rgb(145, 184, 211);
+    text-align: center;
+    width: 50%;
+    margin: 100px auto auto auto;
+    padding: 20px;
+    font-family: HappyKid, arial;
+    font-size: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Input icon container */
+.input-icon {
+    position: relative;
+    display: inline-block;
+}
+
+/* Icon inside input */
+.input-icon i {
+    position: absolute;
+    left: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    color: gray;
+}
+
+/* Input field with icon */
+.input-icon input {
+    padding: 0 0 0 30px;
+    height: 30px;
+    font-size: 14px;
+}
+
+/* Phone, email, location, hours containers */
+.phone-no-containter {
+    display: grid;
+    place-items: center;
+}
+.phone-no {
+    font-weight: bold;
+}
+.email-add-containter {
+    display: grid;
+    place-items: center;
+}
+.email-add {
+    font-weight: bold;
+}
+.location-containter {
+    display: grid;
+    place-items: center;
+}
+.location {
+    font-weight: bold;
+}
+.working-hours-containter {
+    display: grid;
+    place-items: center;
+}
+.working-hrs {
+    font-weight: bold;
+}
+
+/* ===========================
+   Decorative Lines
+   =========================== */
+/* Vertical line for decoration */
+.vertical-line {
+    height: 90px;
+}
+
+/* Horizontal line for decoration */
+.horizontal-line {
+    width: 220px;
+}
+
+/* ===========================
+   Footer Styles
+   =========================== */
+/* Page footer */
+footer {
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 10px 0;
+    background-color: rgb(145, 184, 211);
+    box-shadow: 0 -1px 4px gray;
+    font-family: Arial;
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+}
+
+/* ===========================
+   Responsive Styles (Tablets)
+   =========================== */
+@media (max-width: 1024px) {
+    /* Home page text overlay for tablets */
+    .home-page-container-text {
+        width: 90%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .home-page-container img {
+        width: 100%;
+        height: 800px;
+        object-fit: cover;
+    }
+    /* Donation page image for tablets */
+    .donation-page-container img {
+        width: 100%;
+        height: 1000px;
+        object-fit: cover;
+    }
+    /* Donation page text overlay for tablets */
+    .donation-page-container-text {
+        width: 90%;
+        font-size: 18px;
+        padding: 10px;
+        height: auto;
+        position: absolute;
+        top: 50px;  
+        left: 10px;
+    }
+    /* Donation form for tablets */
+    .donation-page-container-form {
+        position: absolute;
+        top: 500px;
+        left: 10px;
+        width: 90%;
+        height: auto;
+    }
+    /* Volunteering page image for tablets */
+    .volunteering-page-container img {
+        width: 100%;
+        height: 1200px;
+        object-fit: cover;
+    }
+    /* Volunteering page text overlay for tablets */
+    .volunteering-page-container-text {
+        width: 92%;
+        font-size: 18px;
+        padding: 10px;
+        height: auto;
+        position: absolute;
+        top: 50px;  
+        left: 12px;
+    }
+    /* Volunteering header for tablets */
+    .volunteering-header {
+        width: 92.1%;
+        font-size: 30px;
+        padding: 10px;
+        position: absolute;
+        top: 530px;
+        left: 10px;
+    }
+    /* Volunteering form for tablets */
+    .form-container-2 {
+        position: absolute;
+        width: 90%;
+        height: auto;
+        top: 653px;
+        left: 10px;
+    }
+    /* Adoption heading for tablets */
+    .new-bf {
+        width: 90%;
+        margin: 20px auto 50px auto;
+        font-size: 50px;
+    }
+    /* Dog profiles grid for tablets */
+    .dog-profiles-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: auto;
+        margin-bottom: 100px;
+    }
+    .dog-profiles-container img {
+        width: 100px;
+        height: 100px;
+    }
+    /* Horizontal line for tablets */
+    .horizontal-line {
+        width: 50%;
+    }
+}
+
+/* ===========================
+   Responsive Styles (Mobile)
+   =========================== */
+@media (max-width: 600px) {
+    /* Navbar layout for mobile */
+    .navbar {
+        display: block;
+        text-align: center;
+    }
+    .logo {
+        width: 70px;
+        margin: 10px auto;
+        display: block;
+    }
+    .ngo-name {
+        font-size: 28px;
+        margin: 10px 0;
+        display: block;
+    }
+    .nav-links {
+        float: none;
+        margin: 10px 0;
+        display: block;
+    }
+    .nav-links a {
+        display: block;
+        margin: 10px auto;
+        font-size: 18px;
+        padding: 8px 0;
+    }
+    /* Donation page text overlay for mobile */
+    .donation-page-container-text {
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        width: 90%;
+        height: auto;
+        font-size: 16px;
+        padding: 5px;
+    }
+    /* Home page text overlay for mobile */
+    .home-page-container-text {
+        font-size: 16px;
+        width: 90%;
+        padding: 5px;
+    }
+    /* Donation form for mobile */
+    .donation-page-container-form {
+        position: absolute;
+        width: 90%;
+        height: auto;
+        top: 550px;
+        left: 10px;
+    }
+    /* Volunteering page image for mobile */
+    .volunteering-page-container img {
+        width: 100%;
+        height: 1490px;
+        object-fit: cover;
+    }
+    /* Volunteering page text overlay for mobile */
+    .volunteering-page-container-text {
+        width: 90%;
+        font-size: 16px;
+        padding: 5px;
+        position: absolute;
+        top: 50px;  
+        left: 10px;
+        height: auto;
+    }
+    /* Volunteering header for mobile */
+    .volunteering-header {
+        width: 93.8%;
+        font-size: 25px;
+        position: absolute;
+        top: 600px;
+        left: 10;
+    }
+    /* Volunteering form for mobile */
+    .form-container-2 {
+        width: 90%;
+        position: absolute;
+        top: 752px;
+        left: 10px;
+    }
+    /* Adoption heading for mobile */
+    .new-bf {
+        width: 98%;
+        font-size: 22px;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    /* Dog profiles grid for mobile */
+    .dog-profiles-container {
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        margin-bottom: 100px;
+    }
+    .dog-profiles-container img {
+        width: 100px;
+        height: 100px;
+    }
+    /* Report form input grid for mobile */
+    .inner-form-container-1 {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        justify-items: center;
+        text-align: center;
+        size: 20%;
+    }
+    /* Report form checkbox grid for mobile */
+    .inner-form-container-2 {
+        grid-template-columns: 1fr;
+        justify-items: left;
+        text-align: left;
+    }
+    /* Report page textarea for mobile */
+    .report-page-container-text textarea {
+        width: 50%;
+    }
+    /* "Get in touch" heading for mobile */
+    .get-in-touch {
+        width: 70%;
+        font-size: 22px;
+        position: absolute;
+        top: -70px;
+        left: 10px;
+    }
+    /* Contact info grid for mobile */
+    .contact-us-container {
+        position: absolute;
+        top: 101px;
+        left: 10PX;
+        grid-template-columns: 1fr;
+        width: 70%;
+    }
+    /* Hide vertical line on mobile */
+    .vertical-line {
+        height: 0px;
+        display: none;
+    }
+    /* Hide horizontal line on mobile */
+    .horizontal-line {
+        width: 0px;
+        display: none;
+    }
+}

@@ -1,74 +1,108 @@
+<!-- ===========================
+     Report Page
+     =========================== -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPCA Johannesburg | Report</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../styling/styles.css">
 </head>
 <body>
-    
-<img src="../images/SPCA-Logo-teal.png" width="200px">
 
-<p>
-    <h1>
-        <u>SPCA Johannesburg</u>
-    </h1>
-</p>
-        
-<nav>
+<!-- Navigation Bar -->
+<nav class="navbar">
+
+    <img src="../images/logo.png" class="logo">
+
+    <p class="ngo-name">SPCA Johannesburg</p>
+
+
+<div class="nav-links">
     <a href="home.html">Home</a>
-    <a href="donation.html">Dontaions</a>
+    <a href="donation.html">Donations</a>
     <a href="volunteering.html">Volunteering</a>
     <a href="adoption.html">Adoption</a>
     <a href="report.html">Report</a>
     <a href="contact.html">Contact Us</a>
+</div>
+    
 </nav>
 
+<!-- Main Report Content -->
+<div class="report-page-container">
+<img src="../images/report1.webp">
+<div class="report-page-container-text">
+<div class="report-header">
 <p>
-    If you are aware of any animals in need and would like to reach out to us
+    If you are aware of any animals in need of our help and would like to reach <br/>
+    out to us, please fill out the following information
 </p>
+</div>
 
-<p>
-    <u>
-        <strong>Please fill out the following information</strong> 
-    </u>
-</p>
+<!-- Report Form -->
+<form class="form-container-1">
+<div class="inner-form-container-1">
+<div class="input-icon">
+    <i class="fa-solid fa-user"></i>
+    <input placeholder="First name" type="text" id="name" >
+</div>
 
-<form>
-    <label for="name">First name</label>
-    <input type="text" id="name">
-<br/>
-    <label id="lname">Last name</label>
-    <input type="text" id="lname">
-<br/>
-    <label id="pnum">Phone number</label>
-    <input type="number" id="pnum">
-<br/>
-    <label id="email">Email Address</label>
-    <input type="text" id="email">
-<br/>
+<div class="input-icon">
+    <i class="fa-solid fa-user"></i>
+    <input placeholder="Last name" type="text" id="lname" >
+</div>
+
+<div class="input-icon">
+    <i class="fa-solid fa-phone"></i>
+    <input placeholder="Phone number" type="text" id="pnum" >
+</div>
+
+<div class="input-icon">
+    <i class="fa-solid fa-envelope"></i>
+    <input placeholder="Email Address" type="email" id="email" >
+</div>
+</div>
+
+<div class="click-box-text">
     <p>What is it that you would like to report, click the relevent box.</p>
+</div>
 
+<div class="inner-form-container-2">
+<div>
     <input type="checkbox" id="box-1">
     <label id="box-1">Animal abuse</label>
-    
+</div>  
+
+<div>
     <input type="checkbox" id="box-2">
     <label id="box-2">Medical emergency</label>
-    
+</div> 
+
+<div>
     <input type="checkbox" id="box-3">
     <label id="box-3">Lost pet</label>
-    
+</div>
+
+<div>
     <input type="checkbox" id="box-4">
     <label id="box-4">Stray animal</label>
-<br/> 
+</div>
+</div>
+
+    <textarea placeholder="Type out any extra information...." id="discription" rows="7" cols="40"></textarea>
 <br/>
-    <label for="discription">Provide a brief discription of the situation</label>
-<br/>
-    <textarea id="discription" rows="10" cols="50"></textarea>
+    <input type="submit" value="Report">
 </form>
+</div>
+</div>
 
+<!-- Footer -->
 <footer>
-
+    <p>© 2025 SPCA Johannesburg. All rights reserved.</p>
 </footer>
 
 </body>

@@ -1,39 +1,55 @@
+<!-- ===========================
+     Volunteering Page
+     =========================== -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPCA Johannesburg | Apply For Volunteering</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../styling/styles.css">
 </head>
 <body>
-    
-<img src="../images/SPCA-Logo-teal.png" width="200px">
+   
+<!-- Navigation Bar -->    
+<nav class="navbar">
 
-<p>
-    <h1>
-        <u>SPCA Johannesburg</u>
-    </h1>
-</p>
-        
-<nav>
+    <img src="../images/logo.png" class="logo">
+
+    <p class="ngo-name">SPCA Johannesburg</p>
+
+
+<div class="nav-links">
     <a href="home.html">Home</a>
     <a href="donation.html">Donations</a>
     <a href="volunteering.html">Volunteering</a>
     <a href="adoption.html">Adoption</a>
     <a href="report.html">Report</a>
     <a href="contact.html">Contact Us</a>
+</div>
+    
 </nav>
 
-<img src="../images/volunteers.jpg" width="500px">
+<!-- Main Volunteering Content -->
+<div class="volunteering-page-container">
+<img src="../images/volunteering.webp">
+<div class="volunteering-page-container-text">
 
+<!-- Volunteering Info -->
 <p>
-    <strong>What exactly is volunteering?</strong>
+    <div class="volunteering-page-container-heading">What exactly is volunteering?</div> 
 <br/>
     The act of volunteering at JSPCA means to freely donate your time and effort to help our animal welfare organization 
     prevent animal cruelty and promote kindness, without recieving financial compensation in return.
 </p>
+
 <p>
-    <strong>This may come in many forms such as...</strong>
+<div class="volunteering-page-container-heading">
+    This may come in many forms such as...
+</div>
+
 <br/>
     Helping to clean
 <br/>
@@ -45,67 +61,93 @@
 <br/>
     Fostering animals in your own homes
 </p>
+</div>
 
-<p>
+<!-- Volunteering Form Header -->
+<p class="volunteering-header">
     If you are interested in applying please fill out the following form
 </p>
 
-<form>
-    <label for="name">First name</label>
-    <input type="text" id="name">
-<br/>
-    <label for="lname">Last name</label>
-    <input type="text" id="lname">
-<br/>
-    <label for="email">Email address</label>
-    <input type="text" id="email">
-<br/>
-    <label for="pnum">Phone number</label>
-    <input type="pnum" id="pnum">
-<br/>
+<!-- Volunteering Application Form -->
+<form class="form-container-2">
+<div class="inner-form-container-1">
+    <div class="input-icon">
+    <i class="fa-solid fa-user"></i>
+    <input placeholder="First name" type="text" id="name">
+</div>
+
+    <div class="input-icon">
+    <i class="fa-solid fa-user"></i>
+    <input placeholder="First name" type="text" id="name">
+</div>
+
+<div class="input-icon">
+    <i class="fa-solid fa-envelope"></i>
+    <input placeholder="Email Address" type="email" id="email">
+</div>
+
+    <div class="input-icon">
+    <i class="fa-solid fa-phone"></i>
+    <input placeholder="Phone number" type="text" id="pnum">
+</div>
+</div>
 
 <p>
-    Select between the options why it is that you'd like to volunteer
+    Select between the following options why it is that you'd like to volunteer
 </p>
 
+<div class="inner-form-container-2">
+<div>
     <input type="checkbox" id="box-5">
     <label for="box-5">Make a possitive impact</label>
-<br/>
+</div>
+<div>
     <input type="checkbox" id="box-6">
-    <label for="box-6">For experience</label>
-<br/>
+    <label for="box-6">For the experience</label>
+</div>
+<div>
     <input type="checkbox" id="box-7">
-    <label for="box-7">Like animals</label>
-<br/>
+    <label for="box-7">I like animals</label>
+</div>
+<div>
     <input type="checkbox" id="box-8">
     <label for="box-8">Meet new people</label>
-<br/>
+</div>
+<div>
     <input type="checkbox" id="box-9">
     <label for="box-9">Just want to</label>
-<br/>
+</div>
+</div>
 
 <p>
     How did you find out about us
 </p>
-
+<div class="inner-form-container-2">
+<div>
     <input type="checkbox" id="box-10">
     <label for="box-10">Word of mouth</label>
-<br/>
+</div>
+<div>
     <input type="checkbox" id="box-11">
     <label for="box-11">Social media</label>
-<br/>
+</div>
+<div>
     <input type="checkbox" id="box-12">
     <label for="box-12">Our website</label>
-<br/>
+</div>
+<div>
     <input type="checkbox" id="box-13">
     <label for="box-13">A flyer or billboard</label>
-<br/>
-<br/>
+</div>
+</div>
+
     <input type="submit" value="Apply">
 </form>
+</div>
 
+<!-- Footer -->
 <footer>
-
+    <p>© 2025 SPCA Johannesburg. All rights reserved.</p>
 </footer>
 
 

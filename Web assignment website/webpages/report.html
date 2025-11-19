@@ -1,8 +1,5 @@
-<!-- ===========================
-     Report Page
-     =========================== -->
-
 <!DOCTYPE html>
+<!-- Page: Report — report animal concerns form; uses shared validation in scripts/main.js -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,27 +9,10 @@
     <link rel="stylesheet" href="../styling/styles.css">
 </head>
 <body>
-
-<!-- Navigation Bar -->
-<nav class="navbar">
-
-    <img src="../images/logo.png" class="logo">
-
-    <p class="ngo-name">SPCA Johannesburg</p>
-
-
-<div class="nav-links">
-    <a href="home.html">Home</a>
-    <a href="donation.html">Donations</a>
-    <a href="volunteering.html">Volunteering</a>
-    <a href="adoption.html">Adoption</a>
-    <a href="report.html">Report</a>
-    <a href="contact.html">Contact Us</a>
-</div>
     
-</nav>
+<!-- Navbar placeholder (injected by scripts/main.js) -->
+<div id="navbar-placeholder"></div> 
 
-<!-- Main Report Content -->
 <div class="report-page-container">
 <img src="../images/report1.webp">
 <div class="report-page-container-text">
@@ -43,27 +23,30 @@
 </p>
 </div>
 
-<!-- Report Form -->
-<form class="form-container-1">
+<form id="form" class="form-container-1">
 <div class="inner-form-container-1">
 <div class="input-icon">
     <i class="fa-solid fa-user"></i>
-    <input placeholder="First name" type="text" id="name" >
+    <input placeholder="First name" type="text" id="firstname" >
+    <div class="error"></div>
 </div>
 
 <div class="input-icon">
     <i class="fa-solid fa-user"></i>
-    <input placeholder="Last name" type="text" id="lname" >
+    <input placeholder="Last name" type="text" id="lastname" >
+    <div class="error"></div>
 </div>
 
 <div class="input-icon">
     <i class="fa-solid fa-phone"></i>
     <input placeholder="Phone number" type="text" id="pnum" >
+    <div class="error"></div>
 </div>
 
 <div class="input-icon">
     <i class="fa-solid fa-envelope"></i>
     <input placeholder="Email Address" type="email" id="email" >
+    <div class="error"></div>
 </div>
 </div>
 
@@ -100,10 +83,9 @@
 </div>
 </div>
 
-<!-- Footer -->
-<footer>
-    <p>© 2025 SPCA Johannesburg. All rights reserved.</p>
-</footer>
+<div id="footer-placeholder"></div>
+
+<script src="../scripts/main.js"></script>
 
 </body>
 </html>

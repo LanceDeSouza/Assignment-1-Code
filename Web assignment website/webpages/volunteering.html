@@ -1,8 +1,5 @@
-<!-- ===========================
-     Volunteering Page
-     =========================== -->
-
 <!DOCTYPE html>
+<!-- Page: Volunteering — volunteer application form; uses shared validation in scripts/main.js -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,90 +9,73 @@
     <link rel="stylesheet" href="../styling/styles.css">
 </head>
 <body>
-   
-<!-- Navigation Bar -->    
-<nav class="navbar">
-
-    <img src="../images/logo.png" class="logo">
-
-    <p class="ngo-name">SPCA Johannesburg</p>
-
-
-<div class="nav-links">
-    <a href="home.html">Home</a>
-    <a href="donation.html">Donations</a>
-    <a href="volunteering.html">Volunteering</a>
-    <a href="adoption.html">Adoption</a>
-    <a href="report.html">Report</a>
-    <a href="contact.html">Contact Us</a>
-</div>
     
-</nav>
+<!-- Navbar placeholder (injected by scripts/main.js) -->
+<div id="navbar-placeholder"></div> 
 
-<!-- Main Volunteering Content -->
 <div class="volunteering-page-container">
 <img src="../images/volunteering.webp">
 <div class="volunteering-page-container-text">
-
-<!-- Volunteering Info -->
+<!-- Intro section -->
 <p>
     <div class="volunteering-page-container-heading">What exactly is volunteering?</div> 
 <br/>
     The act of volunteering at JSPCA means to freely donate your time and effort to help our animal welfare organization 
     prevent animal cruelty and promote kindness, without recieving financial compensation in return.
 </p>
-
 <p>
-<div class="volunteering-page-container-heading">
-    This may come in many forms such as...
-</div>
-
-<br/>
-    Helping to clean
-<br/>
-    Taking walks or playing with the animals
-<br/>
-    Helping with administrative duties
-<br/>
-    Planning and helping to organise fundraises
-<br/>
-    Fostering animals in your own homes
+    <div class="volunteering-page-container-heading">This may come in many forms such as...</div>
+<ul>
+    <li>Helping to clean</li>
+    <li>Taking walks or playing with the animals</li>
+    <li>Helping with administrative duties</li>
+    <li>Planning and helping to organise fundraises</li>
+    <li>Fostering animals in your own homes</li>
+</ul>
 </p>
 </div>
 
-<!-- Volunteering Form Header -->
 <p class="volunteering-header">
     If you are interested in applying please fill out the following form
 </p>
 
-<!-- Volunteering Application Form -->
-<form class="form-container-2">
+
+<!-- Application form (uses shared validation in scripts/main.js) -->
+<form id="form" class="form-container-2">
+
 <div class="inner-form-container-1">
-    <div class="input-icon">
+
+<div class="input-icon">
     <i class="fa-solid fa-user"></i>
-    <input placeholder="First name" type="text" id="name">
+    <input placeholder="First name" type="text" id="firstname">
+    <div class="error"></div>
 </div>
 
-    <div class="input-icon">
+<div class="input-icon">
     <i class="fa-solid fa-user"></i>
-    <input placeholder="First name" type="text" id="name">
+    <input placeholder="Last name" type="text" id="lastname">
+    <div class="error"></div>
 </div>
 
 <div class="input-icon">
     <i class="fa-solid fa-envelope"></i>
-    <input placeholder="Email Address" type="email" id="email">
+    <input placeholder="Email Address" type="text" id="email">
+    <div class="error"></div>
 </div>
 
-    <div class="input-icon">
+<div class="input-icon">
     <i class="fa-solid fa-phone"></i>
     <input placeholder="Phone number" type="text" id="pnum">
+    <div class="error"></div>
 </div>
+
 </div>
 
 <p>
     Select between the following options why it is that you'd like to volunteer
 </p>
 
+<!-- Reasons checkboxes -->
 <div class="inner-form-container-2">
 <div>
     <input type="checkbox" id="box-5">
@@ -145,11 +125,9 @@
 </form>
 </div>
 
-<!-- Footer -->
-<footer>
-    <p>© 2025 SPCA Johannesburg. All rights reserved.</p>
-</footer>
+<div id="footer-placeholder"></div>
 
+<script src="../scripts/main.js"></script>
 
 </body>
 </html>

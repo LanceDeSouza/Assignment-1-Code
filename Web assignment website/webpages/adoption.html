@@ -1,45 +1,83 @@
-<!-- ===========================
-     Adoption Page
-     =========================== -->
-     
 <!DOCTYPE html>
+<!-- Page: Adoption — listings of dogs and cats available for adoption; includes filter UI and profile cards -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPCA Johannesburg | Adoptions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../styling/styles.css">
 </head>
 <body>
     
-<!-- Navigation Bar -->
-<nav class="navbar">
+<!-- Navbar placeholder (injected by scripts/main.js) -->
+<div id="navbar-placeholder"></div> 
 
-    <img src="../images/logo.png" class="logo">
-
-    <p class="ngo-name">SPCA Johannesburg</p>
-
-
-<div class="nav-links">
-    <a href="home.html">Home</a>
-    <a href="donation.html">Donations</a>
-    <a href="volunteering.html">Volunteering</a>
-    <a href="adoption.html">Adoption</a>
-    <a href="report.html">Report</a>
-    <a href="contact.html">Contact Us</a>
+<div class="adoption-page-container">
+<div class="new-bf">
+    Meet a potentialy new best friend
 </div>
 
-</nav>
+<div class="adoption-filters" style="text-align:center; margin:20px 0;">
 
-<!-- Adoption Page Heading -->
-<p class="new-bf">
-    Meet a potentialy new best friend
-</p>
+<button id="filter-toggle" aria-haspopup="true" aria-expanded="false" style="margin-left:10px;">
+   <i class="fa-solid fa-bars"></i>
+</button>
+    
+<div id="filter-dropdown" class="filter-dropdown" style="display:none; position:relative;">
 
-<!-- Animal Profiles Grid -->
+<div class="filter-panel" style="position:absolute; right:0; background:white; color:black; padding:10px; border:1px solid #ccc; box-shadow:0 2px 6px rgba(0,0,0,0.15); z-index:20;">
+<form id="filter-form">
+
+<div style="margin-bottom:8px;">
+    <strong>
+        Type
+    </strong>
+</div>
+
+<label>
+    <input type="radio" name="type" value="all" checked> 
+    All
+</label>
+<br>
+<label>
+    <input type="radio" name="type" value="dog"> 
+    Dogs
+</label>
+<br>
+<label>
+    <input type="radio" name="type" value="cat"> 
+    Cats
+</label>
+
+<hr/>
+
+<div style="margin-bottom:8px;">
+    <strong>
+        Age range (years)
+    </strong>
+</div>
+    <input id="age-min" type="number" min="0" placeholder="Min" style="width:60px;"> 
+    <input id="age-max" type="number" min="0" placeholder="Max" style="width:60px;">
+    <div style="margin-top:10px; text-align:right;">
+
+<button type="button" id="filter-clear">
+    Clear
+</button>
+
+<button type="button" id="filter-apply">
+    Apply
+</button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+
 <div class="dog-profiles-container">
-
 <div class="dog-profiles">
+
 <img class="images" src="../images/dog1.jpg">
 
 <div>
@@ -459,10 +497,9 @@
 </div>
 </div>
 
-<!-- Footer -->
-<footer>
-    <p>© 2025 SPCA Johannesburg. All rights reserved.</p>
-</footer>
+<div id="footer-placeholder"></div>
+
+<script src="../scripts/main.js"></script>
 
 </body>
 </html>

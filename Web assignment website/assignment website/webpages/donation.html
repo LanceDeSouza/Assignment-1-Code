@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- Page: Donations — donation widget with presets, progress bar, and receipt download -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPCA Johannesburg | Donations</title>
+    <link rel="stylesheet" href="../styling/styles.css">
+</head>
+<body>
+    
+<!-- Navbar placeholder (injected by scripts/main.js) -->
+<div id="navbar-placeholder"></div> 
+
+<div class="donation-page-container">
+<img src="../images/donation-3.jpg">
+
+<div class="donation-page-container-text">
+<p class="donation-page-container-text-1">
+    What you may consider a small deed can go a very long way in
+    helping many animals in need
+</p>
+
+<p class="donation-page-container-text-2">
+    Help by donating today!
+
+</p>
+</div>
+
+<div class="donation-page-container-form">
+<p class="donation-page-container-text-3">
+    DONATE
+</p>
+<p class="donation-page-container-text-4">
+    Set an amount you would like to donate
+</p>
+
+
+<div class="donation-widget">
+    <div class="donation-presets" aria-label="Preset donation amounts">
+
+        <button type="button" data-amount="100">
+            R100
+        </button>
+
+        <button type="button" data-amount="250">
+            R250
+        </button>
+
+        <button type="button" data-amount="500">
+            R500
+        </button>
+
+        <button type="button" data-amount="1000">
+            R1000
+        </button>
+
+        <button type="button" data-amount="other">
+            Other
+        </button>
+
+    </div>
+
+    <form id="donation-form">
+        <div class="donation-row">
+
+            <label for="donation-amount" class="visually-hidden">
+                Amount
+            </label>
+            <input id="donation-amount" name="amount" type="text" inputmode="numeric" placeholder="R100" aria-label="Donation amount">
+
+            <select id="donation-frequency" name="frequency" aria-label="Donation frequency">
+                <option value="once">
+                    One-time
+                </option>
+
+                <option value="monthly">
+                    Monthly
+                </option>
+            </select>
+
+        </div>
+
+        <div class="donation-row">
+            <input id="donor-name" name="name" type="text" placeholder="Full name" aria-label="Full name">
+        </div>
+
+        <div class="donation-row">
+            <input id="donor-email" name="email" type="email" placeholder="Email" aria-label="Email address">
+        </div>
+
+        <div class="donation-row">
+            <button id="donate-submit" type="submit">
+                Donate
+            </button>
+        </div>
+    </form>
+
+    <div class="donation-progress-wrap" aria-hidden="false">
+
+        <div class="donation-progress-label">
+            Goal: R
+            <span id="donation-goal">
+                50000
+            </span>
+        </div>
+
+        <div class="donation-progress">
+            <div id="donation-progress-bar" class="donation-progress-bar" style="width:0%"></div>
+        </div>
+
+        <div class="donation-progress-text">
+            Raised: R
+            <span id="donation-total">
+                0
+            </span>
+        </div>
+    </div>
+</div>
+
+
+<div id="donation-modal" class="donation-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="donation-modal-content">
+        <h3>
+            Thank you for supporting our cause! Your generosity helps us provide care and shelter to countless animals in need.
+        </h3>
+
+        <p id="donation-modal-text"></p>
+
+        <div class="donation-modal-actions">
+            <button id="donation-modal-close">
+                Close
+            </button>
+
+            <button id="donation-modal-download">
+                Download receipt
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script src="../scripts/main.js"></script>
+
+</body>
+</html>
